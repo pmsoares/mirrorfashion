@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre a Mirror Fashion</title>
-    <link rel="stylesheet" href="css/sobre.css">
-</head>
-
-<body>
+<?php
+$cabecalho_title = "Sobre da Mirror Fashion";
+$cabecalho_css = '<link rel="stylesheet" href="css/sobre.css">';
+include("cabecalho.php");
+?>
     <!-- logo da Mirror Fashion -->
     <img src="img/logo.png" alt="Logo Mirror Fashion">
 
@@ -78,11 +72,7 @@
         <li>Mais de um milhão de funcionários em todo o mundo</li>
     </ul>
 
-    <footer>
-        <img src="img/logo.png" alt="Logo Mirror Fashion">
-
-        &copy; Copyright Mirror Fashion
-    </footer>
+    <?php include("rodape.php"); ?>
 </body>
 
 </html>
