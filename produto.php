@@ -83,6 +83,3 @@ include("cabecalho.php");
 </div>
 
 <?php include("rodape.php"); ?>
-</body>
-
-</html>
