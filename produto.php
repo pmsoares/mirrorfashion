@@ -11,6 +11,7 @@ include("cabecalho.php");
             <p>por apenas R$ 129,00</p>
 
             <form method="post" action="checkout.php">
+                <input type="hidden" name="id" value="2">
                 <input type="hidden" name="nome" value="Fuzzy Cardigan">
                 <input type="hidden" name="preco" value="129.00">
 
