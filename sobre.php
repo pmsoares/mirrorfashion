@@ -3,6 +3,7 @@ $cabecalho_title = "Sobre da Mirror Fashion";
 $cabecalho_css = '<link rel="stylesheet" href="css/sobre.css">';
 include("cabecalho.php");
 ?>
+
 <!-- logo da Mirror Fashion -->
 <img src="img/logo.png" alt="Logo Mirror Fashion">
 

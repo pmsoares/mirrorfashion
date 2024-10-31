@@ -36,8 +36,8 @@ include("cabecalho.php");
 
                 <fieldset class="tamanhos">
                     <legend>Escolha o tamanho:</legend>
-
                     <input type="range" min="36" max="46" step="2" value="42" name="tamanho" id="tamanho">
+                    <output for="tamanho" name="valortamanho">42</output>
                 </fieldset>
 
                 <input type="submit" class="comprar" value="Comprar">
@@ -81,5 +81,7 @@ include("cabecalho.php");
         </div>
     </div>
 </div>
+
+<script src="js/produto.js"></script>
 
 <?php include("rodape.php"); ?>
