@@ -34,7 +34,7 @@ p {
     text-indent: 15px;
 }
 
-p::first-letter{
+p::first-letter {
     font-weight: bold;
 }
 
@@ -42,7 +42,7 @@ p::first-line {
     font-variant: small-caps;
 }
 
-h1 + p {
+h1+p {
     text-indent: 0;
 }
 
@@ -67,4 +67,12 @@ footer img {
 #familia-pelho {
     margin: 0 0 10px 10px;
     float: right;
+}
+
+.centrar {
+    text-align: center;
+}
+
+iframe {
+    margin: 30px 0;
 }
