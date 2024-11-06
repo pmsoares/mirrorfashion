@@ -1,3 +1,9 @@
+<?php
+$con = mysqli_connect("localhost", "root", "", "mirrorfashion");
+$dados = mysqli_query($con, "SELECT * FROM produtos WHERE id = $_POST[id]");
+$produto = mysqli_fetch_array($dados);
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -5,7 +11,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Mirror Fashion</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap_flatly.min.css">
 
     <style>
@@ -67,10 +72,10 @@
 
                         <dl>
                             <dt>Produto</dt>
-                            <dd><?= $_POST['nome'] ?></dd>
+                            <dd><?= $produto['nome'] ?></dd>
 
                             <dt>Preço</dt>
-                            <dd id="preco"><?= $_POST['preco'] ?></dd>
+                            <dd id="preco"><?= $produto['preco'] ?></dd>
 
                             <dt>Cor</dt>
                             <dd><?= $_POST['cor'] ?></dd>
@@ -81,12 +86,12 @@
 
                         <div class="form-group">
                             <label for="qt">Quantidade</label>
-                            <input type="number" id="qt" class="form-control" min="0" max="99" value="1">
+                            <input type="number" id="qt" class="form-control" min="1" max="99" value="1">
                         </div>
                         <div class="form-group">
                             <label for="total">Total</label>
                             <output for="qt valor" id="total" class="form-control">
-                                <?= $_POST['preco'] ?>
+                                <?= $produto['preco'] ?>
                             </output>
                         </div>
 
